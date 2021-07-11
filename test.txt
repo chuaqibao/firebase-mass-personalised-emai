@@ -1,0 +1,17 @@
+<html>
+<body>
+Dear {PERSON},<br><br>
+
+Thank you for joining us at the SMU x SUTD Combined Strings Concert — Alma Mater! <br><br>
+
+Here are your login credentials to access the <a href='https://almamaterconcert.com/'>concert video website</a>.<br><br>
+
+<b>Username</b>: {USERNAME}<br>
+<b>Password</b>: {PASSWORD}<br>
+
+Look forward to being enraptured by the beauty of our strings! Thank you.<br><br>
+
+Warmest Regards,<br>
+Alma Mater Organising Committee<br>
+</body>
+</html>
