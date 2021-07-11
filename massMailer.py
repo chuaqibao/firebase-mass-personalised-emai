@@ -40,7 +40,7 @@ def read_template(filename):
         return mail_content
 
 def sendMail():
-    mail_body = read_template('test.txt')
+    mail_body = read_template('mailContent.txt')
 
     print("Login")
     email = input("Enter your gmail: ")
@@ -50,7 +50,7 @@ def sendMail():
     s.starttls()
     s.login(email, password)
 
-    with open("test.csv", "r") as csv_file:
+    with open("receiverDetails.csv", "r") as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
         next(csv_reader)
         for row in csv_reader:
@@ -69,7 +69,6 @@ def sendMail():
 
             msg.attach(MIMEText(message, 'html'))
 
-            s.send_message(msg)
             del msg
 
     s.quit()
